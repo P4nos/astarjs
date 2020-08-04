@@ -1,0 +1,30 @@
+{
+  "name": "astarjs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "build": "webpack",
+    "dev": "webpack-dev-server --host 0.0.0.0"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/express": "^4.17.7",
+    "copy-webpack-plugin": "^6.0.3",
+    "express": "^4.17.1",
+    "file-loader": "^6.0.0",
+    "html-webpack-plugin": "^4.3.0",
+    "lodash": "^4.17.19",
+    "ts-loader": "^7.0.5",
+    "typescript": "^3.9.7",
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.12"
+  },
+  "devDependencies": {
+    "css-loader": "^4.1.1",
+    "style-loader": "^1.2.1",
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "^3.11.0"
+  }
+}

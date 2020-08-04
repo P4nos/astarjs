@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Visualize A* Algorithm</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="box" class="box">
+      <div id="container" class="container"></div>
+      <div id="settings" class="settings">
+        <div class="grid-size">
+          <div class="inputs">
+            <label for="sizeY">Number of rows</label>
+            <input type="text" id="sizeY" />
+            <label for="sizeX">Number of columns</label>
+            <input type="text" id="sizeX" />
+          </div>
+          <div class="button-holder">
+            <button id="redraw" class="button-disabled" disabled>
+              Redraw grid
+            </button>
+            <p>Redraws the grid with the new size set by the input values</p>
+          </div>
+          <div class="button-holder">
+            <button id="compute-path" class="button-disabled" disabled>
+              Get path
+            </button>
+            <p>Computes the shortest path using the Manhattan heuristic</p>
+          </div>
+          <div class="button-holder">
+            <button id="compute-path-step" class="button-disabled" disabled>
+              Get path step
+            </button>
+            <p>Visualize the progress step by step</p>
+          </div>
+          <div class="info">
+            <h3>Actions</h3>
+            <ul>
+              <li>
+                Set start position: Ctrl + left click
+              </li>
+              <li>
+                Set goal position: Shift + left click
+              </li>
+              <li>
+                Set wall position: left click on a cell / left click and drag
+                for multiple cells
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="app.js"></script>
+</html>

@@ -1,0 +1,131 @@
+:root {
+  --cols: 5;
+  --rows: 5;
+  --cell-size: 100px;
+  font-family: "Roboto", sans-serif;
+  color: #86a1b0;
+}
+
+body {
+  margin: 0;
+}
+
+.box {
+  display: flex;
+  flex-direction: row;
+  padding: 5px;
+}
+
+.container {
+  flex: 1;
+  display: grid;
+  grid-template-columns: repeat(var(--cols), var(--cell-size) [col-start]);
+  grid-template-rows: repeat(var(--rows), var(--cell-size) [row-start]);
+  user-select: none; /* supported by Chrome and Opera */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+}
+
+.settings {
+  flex: 1;
+}
+
+.grid-size {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.inputs {
+  margin: 10pt;
+  display: flex;
+  flex-direction: column;
+}
+
+.inputs label {
+  font-size: medium;
+}
+
+.item {
+  border: 1px solid lightgray;
+  text-align: center;
+}
+
+.selected {
+  border: 5px solid lightskyblue;
+  border-radius: 2px;
+}
+
+.neighbour {
+  background-color: rgb(248, 195, 126);
+  font-size: 13px;
+}
+
+.wall {
+  background: lightslategray;
+  border-radius: 2px;
+}
+
+.start {
+  background: lightgreen;
+  border-radius: 2px;
+}
+
+.goal {
+  background: lightcoral;
+  border-radius: 2px;
+}
+
+button {
+  margin: 10pt;
+  border: none;
+  text-decoration: none;
+  display: inline-block;
+  color: white;
+  background-color: #af8fb0;
+  border-radius: 2px;
+  padding: 12px 30px;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.button-disabled {
+  background-color: #b6a9b6;
+  color: lightgrey;
+  cursor: default;
+}
+
+input {
+  max-width: 100pt;
+  margin-bottom: 10pt;
+  border: none;
+  border-bottom: 1px solid #86a1b0;
+  border-radius: 2px;
+  padding: 5px 10px;
+}
+
+input:focus {
+  outline: none;
+}
+
+.button-holder {
+  display: flex;
+  align-items: baseline;
+}
+
+.button-holder p {
+  font-size: 15px;
+  color: lightslategrey;
+}
+
+.info {
+  margin: 10pt;
+  background-color: antiquewhite;
+  border-radius: 2px;
+}
+
+.info h3 {
+  padding-left: 5pt;
+}
