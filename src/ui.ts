@@ -13,7 +13,7 @@ export enum UIEvent {
 
 function throttle(func: Function, limit: number) {
   let inThrottle: boolean;
-  return function () {
+  return function() {
     const args = arguments;
     const context = this;
     if (!inThrottle) {
@@ -199,7 +199,7 @@ export class UI implements Observer, Subscriber {
       cells[i].addEventListener("click", this.setGoal, false);
       cells[i].addEventListener("click", this.toggleWall, false);
       cells[i].addEventListener(
-        "mousemove",
+        "mouseover",
         throttle(this.selectCells, 200),
         false
       );
