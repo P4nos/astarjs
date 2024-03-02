@@ -22,9 +22,9 @@
     "webpack-cli": "^3.3.12"
   },
   "devDependencies": {
-    "css-loader": "^4.1.1",
+    "css-loader": "^6.10.0",
     "style-loader": "^1.2.1",
     "webpack-cli": "^3.3.12",
-    "webpack-dev-server": "^3.11.0"
+    "webpack-dev-server": "^5.0.2"
   }
 }
